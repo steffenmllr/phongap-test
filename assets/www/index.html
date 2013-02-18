@@ -23,7 +23,7 @@
     //
     function onDeviceReady() {
         $('#play').on('click', function() {
-            window.MainActivity.customFunctionCalled();
+            window.plugins.videoPlayer.play("file:///android_asset/www/big_buck_bunny.mp4");
         })
     }
 
