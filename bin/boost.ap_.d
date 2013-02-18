@@ -22,6 +22,7 @@
 /Users/steffen/android-sdk/projects/boost2/bin/res/drawable-xhdpi/ic_launcher.png \
 /Users/steffen/android-sdk/projects/boost2/bin/res/drawable-xhdpi/icon.png \
 /Users/steffen/android-sdk/projects/boost2/assets/www \
+/Users/steffen/android-sdk/projects/boost2/assets/www/big_buck_bunny.mp4 \
 /Users/steffen/android-sdk/projects/boost2/assets/www/index.html \
 /Users/steffen/android-sdk/projects/boost2/assets/www/jquery.js \
 /Users/steffen/android-sdk/projects/boost2/assets/www/phonegap.js \

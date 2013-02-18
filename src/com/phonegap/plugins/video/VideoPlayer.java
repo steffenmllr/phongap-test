@@ -55,8 +55,22 @@ public class VideoPlayer extends CordovaPlugin {
 
     private void playVideo(String url) throws IOException {
 
-        System.out.println("Starting");
-        Intent i= new Intent(this.cordova.getActivity(), com.mllrsohn.boost.Video.class);
+        Uri uri = Uri.parse(url);
+        if(url.contains(ASSETS)) {
+            String filepath = url.replace(ASSETS, "");
+            String filename = filepath.substring(filepath.lastIndexOf("/")+1, filepath.length());
+            File fp = new File(this.cordova.getActivity().getFilesDir() + "/" + filename);
+            if (!fp.exists()) {
+                this.copy(filepath, filename);
+            }
+
+            uri = Uri.parse("file://" + this.cordova.getActivity().getFilesDir() + "/" + filename);
+
+        }
+
+        Intent i = new Intent(this.cordova.getActivity(), com.mllrsohn.boost.Video.class);
+        i.putExtra("videoURL", uri.toString());
+
         this.cordova.getActivity().startActivity(i);
 //    	if (url.contains("bit.ly/") || url.contains("goo.gl/") || url.contains("tinyurl.com/") || url.contains("youtu.be/")) {
 //			//support for google / bitly / tinyurl / youtube shortens

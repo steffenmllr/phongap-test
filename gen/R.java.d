@@ -12,13 +12,4 @@
 /Users/steffen/android-sdk/projects/boost2/res/layout/video.xml \
 /Users/steffen/android-sdk/projects/boost2/res/values/strings.xml \
 /Users/steffen/android-sdk/projects/boost2/res/xml/config.xml \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable/icon.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-hdpi/ic_launcher.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-hdpi/icon.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-ldpi/ic_launcher.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-ldpi/icon.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-mdpi/ic_launcher.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-mdpi/icon.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-xhdpi/ic_launcher.png \
-/Users/steffen/android-sdk/projects/boost2/bin/res/drawable-xhdpi/icon.png \
 /Users/steffen/android-sdk/projects/boost2/bin/AndroidManifest.xml \

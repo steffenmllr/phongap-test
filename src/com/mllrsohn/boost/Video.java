@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
+import android.net.Uri;
 
 public class Video extends Activity {
 
@@ -21,7 +22,10 @@ public class Video extends Activity {
         super.onCreate(icicle);
         setContentView(R.layout.video);
         mVideoView = (VideoView) findViewById(R.id.surface_view);
+        path = getIntent().getStringExtra("videoURL");
 
+        System.out.println("----------------videoURL----------------");
+        System.out.println(path);
         if (path == "") {
             // Tell the user to provide a media file URL/path.
             Toast.makeText(
@@ -37,8 +41,8 @@ public class Video extends Activity {
              * mVideoView.setVideoURI(Uri.parse(URLstring));
              */
             mVideoView.setVideoPath(path);
-            mVideoView.setMediaController(new MediaController(this));
             mVideoView.requestFocus();
+            mVideoView.start();
 
         }
     }
