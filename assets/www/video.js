@@ -8,8 +8,8 @@ cordova.define("cordova/plugin/videoplayer",
      *
      * @param url           The url to play
      */
-    VideoPlayer.prototype.play = function(url) {
-        exec(null, null, "VideoPlayer", "playVideo", [url]);
+    VideoPlayer.prototype.play = function(url, loop) {
+        exec(null, null, "VideoPlayer", "playVideo", [url, loop]);
     };
 
     var videoPlayer = new VideoPlayer();
