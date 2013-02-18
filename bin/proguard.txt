@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:61
+-keep class com.mllrsohn.boost.Video { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.mllrsohn.boost.boost { <init>(...); }
+
