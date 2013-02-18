@@ -21,7 +21,11 @@ package com.mllrsohn.boost;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import org.apache.cordova.*;
+import android.content.Context;
+import android.content.Intent;
+
 
 public class boost extends DroidGap
 {
@@ -29,8 +33,14 @@ public class boost extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        super.init(); // Calling this is necessary to make this work
+        appView.addJavascriptInterface(this, "MainActivity");
         super.loadUrl("file:///android_asset/www/index.html");
-
+    }
+    public void customFunctionCalled() {
+      //Intent intent = new Intent(this, com.mllrsohn.boost.Video.class);
+      //startActivity(intent);
+      Log.e("Custom Function Called", "Custom Function Called");
     }
 }
 
